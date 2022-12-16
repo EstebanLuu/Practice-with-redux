@@ -1,0 +1,8 @@
+// CONTADOR
+export const INCREMENT = "INCREMENT";
+export const DECREMENT = "DECREMENT";
+export const INCREMENT2 = "INCREMENT2";
+export const DECREMENT2 = "DECREMENT2";
+export const DECREMENTRANDOM = "DECREMENTRANDOM";
+export const INCREMENTRANDOM = "INCREMENTRANDOM";
+export const RESET = "RESET";
