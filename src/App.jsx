@@ -1,7 +1,7 @@
 import { Provider } from "react-redux";
 import "./App.css";
-import store from "./store";
-import Contador from "./components/Contador";
+import { store } from "./Redux";
+import { Contador } from "./components";
 
 function App() {
   return (

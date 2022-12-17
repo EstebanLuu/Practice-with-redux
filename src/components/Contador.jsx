@@ -8,7 +8,7 @@ import {
   sumar2,
   sumarRandom,
   restarRandom,
-} from "../actions/contadorActions";
+} from "../Redux/actions";
 
 const Contador = () => {
   const state = useSelector((state) => state.contador);

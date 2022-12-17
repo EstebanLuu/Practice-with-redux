@@ -7,6 +7,7 @@ import {
   DECREMENTRANDOM,
   INCREMENTRANDOM,
 } from "../types";
+
 const INITIAL_STATE = 0;
 
 export default function contadorReducer(state = INITIAL_STATE, action) {
