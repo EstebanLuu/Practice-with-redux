@@ -1,7 +1,7 @@
 import { Provider } from "react-redux";
 import "./App.css";
 import { store } from "./Redux";
-import { Contador } from "./components";
+import { Contador, Cart } from "./components";
 
 function App() {
   return (
@@ -10,6 +10,8 @@ function App() {
         <h1>HOLA</h1>
         <Contador />
       </div>
+
+      <Cart />
     </Provider>
   );
 }
