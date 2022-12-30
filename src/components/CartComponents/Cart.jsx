@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { AddToCart, delFromCart, clearCart } from "../../Redux/actions";
 import ProductItem from "./ProductItem";
+import CartItem from "./CartItem";
 
 const Cart = () => {
   const state = useSelector((state) => state.cart);
@@ -23,6 +24,14 @@ const Cart = () => {
         ))}
         <button onClick={() => dispatch(clearCart())}>Limpiar carrito</button>
         <button onClick={() => dispatch(delFromCart())}>Limpiar carrito</button>
+        {cart.map((item, index) => (
+          <CartItem
+            key={index}
+            data={item}
+            delOneFromFCart={() => dispatch(delFromCart(item.id))}
+            delAllFromCart={() => dispatch(delFromCart(item.id, true))}
+          />
+        ))}
       </div>
     </div>
   );
